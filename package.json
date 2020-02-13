@@ -1,0 +1,19 @@
+{
+  "name": "dojo-caixa-eletronico",
+  "version": "1.0.0",
+  "description": "Dojo para projeto de um caixa eletronico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniogouvea/dojo-caixa-eletronico.git"
+  },
+  "author": "Antonio Carlos, Wesley Dias, Cassio Scofield, Dario Trindade, Ricardo Trajano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniogouvea/dojo-caixa-eletronico/issues"
+  },
+  "homepage": "https://github.com/antoniogouvea/dojo-caixa-eletronico#readme"
+}
