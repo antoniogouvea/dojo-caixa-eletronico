@@ -14,9 +14,6 @@ function getNotas(valor) {
   let quantidadeDeNotas=[];
 
   let i = 0;
-  if (valor == 0) {
-
-  }
 
   if ((isValorDivisivelPor10(valor) && (valor > 0))) {
     while (valor>0) {
