@@ -2,11 +2,6 @@ var expect = require('expect');
 var caixa = require('./caixa.js');
 
 describe('testes caixa.js', function(){
-    it('deve converter 15 gerando vazio', function(done) {
-        var result = caixa.getNotas(15);
-        expect(JSON.stringify(result)).toBeFalsy();
-        done();
-    });
     it('deve converter 180', function(done) {
         var result = caixa.getNotas(180);
         expect(JSON.stringify(result)).toBe("[100,50,20,10]");
@@ -40,6 +35,26 @@ describe('testes caixa.js', function(){
     it('deve converter 0', function(done) {
         var result = caixa.getNotas(0);
         expect(JSON.stringify(result)).toBe("[]");
+        done();
+    });
+    it('deve tentar converter 15 gerando falso', function(done) {
+        var result = caixa.getNotas(15);
+        expect(JSON.stringify(result)).toBeFalsy();
+        done();
+    });
+    it('deve tentar converter 1 gerando falso', function(done) {
+        var result = caixa.getNotas(1);
+        expect(JSON.stringify(result)).toBeFalsy();
+        done();
+    });
+    it('deve tentar converter -1 gerando falso', function(done) {
+        var result = caixa.getNotas(-1);
+        expect(JSON.stringify(result)).toBeFalsy();
+        done();
+    });
+    it('deve tentar converter 101 gerando falso', function(done) {
+        var result = caixa.getNotas(101);
+        expect(JSON.stringify(result)).toBeFalsy();
         done();
     });
 });
