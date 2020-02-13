@@ -39,22 +39,22 @@ describe('testes caixa.js', function(){
     });
     it('deve tentar converter 15 gerando falso', function(done) {
         var result = caixa.getNotas(15);
-        expect(JSON.stringify(result)).toBeFalsy();
+        expect(result).toBeFalsy();
         done();
     });
     it('deve tentar converter 1 gerando falso', function(done) {
         var result = caixa.getNotas(1);
-        expect(JSON.stringify(result)).toBeFalsy();
+        expect(result).toBeFalsy();
         done();
     });
     it('deve tentar converter -1 gerando falso', function(done) {
         var result = caixa.getNotas(-1);
-        expect(JSON.stringify(result)).toBeFalsy();
+        expect(result).toBeFalsy();
         done();
     });
     it('deve tentar converter 101 gerando falso', function(done) {
         var result = caixa.getNotas(101);
-        expect(JSON.stringify(result)).toBeFalsy();
+        expect(result).toBeFalsy();
         done();
     });
 });
