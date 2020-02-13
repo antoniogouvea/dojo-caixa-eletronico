@@ -9,7 +9,7 @@ describe('testes caixa.js', function(){
     });
     it('deve converter 330', function(done) {
         var result = caixa.getNotas(330);
-        expect(JSON.stringify(result)).toBe("[100,100,20,10]");
+        expect(JSON.stringify(result)).toBe("[100,100,100,20,10]");
         done();
     });
     it('deve converter 90', function(done) {
