@@ -18,6 +18,6 @@
   "homepage": "https://github.com/antoniogouvea/dojo-caixa-eletronico#readme",
   "dependencies": {
     "expect": "^25.1.0",
-    "mocha": "^7.0.1"
+    "mocha": "^10.2.0"
   }
 }
